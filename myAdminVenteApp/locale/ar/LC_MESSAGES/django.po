@@ -1,0 +1,223 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-08 04:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: myAdminVenteApp/templates/myAdminVenteApp/locations/details_user.html:8
+#: myAdminVenteApp/templates/myAdminVenteApp/ventes/details_user.html:8
+msgid "Editer/gerer"
+msgstr "تعديل/ تحكم"
+
+#: myAdminVenteApp/templates/myAdminVenteApp/locations/details_user.html:27
+#: myAdminVenteApp/templates/myAdminVenteApp/locations/index.html:37
+#, fuzzy
+#| msgid " loye mensuelle en A-UM  "
+msgid "loyer mensuelle"
+msgstr " الايجار الشهري"
+
+#: myAdminVenteApp/templates/myAdminVenteApp/locations/details_user.html:34
+#: myAdminVenteApp/templates/myAdminVenteApp/locations/index.html:42
+#: myAdminVenteApp/templates/myAdminVenteApp/ventes/details_user.html:34
+#: myAdminVenteApp/templates/myAdminVenteApp/ventes/index.html:42
+msgid "ancien ouguiya"
+msgstr ""
+
+#: myAdminVenteApp/templates/myAdminVenteApp/locations/img/download.html:12
+#: myAdminVenteApp/templates/myAdminVenteApp/locations/img/pas_img.html:14
+#: myAdminVenteApp/templates/myAdminVenteApp/ventes/img/download.html:12
+#: myAdminVenteApp/templates/myAdminVenteApp/ventes/img/pas_img.html:14
+msgid "images"
+msgstr "صورة"
+
+#: myAdminVenteApp/templates/myAdminVenteApp/locations/index.html:72
+#: myAdminVenteApp/templates/myAdminVenteApp/ventes/index.html:72
+#, fuzzy
+#| msgid " il n'y a pas d'annonce de location "
+msgid " il n'y a pas d'annonce des vente a valider "
+msgstr "لا يوجد اعلان ايجار "
+
+#: myAdminVenteApp/templates/myAdminVenteApp/locations/links/ajouter_une_annonce.html:6
+#: myAdminVenteApp/templates/myAdminVenteApp/ventes/links/ajouter_une_annonce.html:6
+msgid "Ajouter une annonce "
+msgstr "اضافة اعلان"
+
+#: myAdminVenteApp/templates/myAdminVenteApp/locations/links/decision.html:10
+#: myAdminVenteApp/templates/myAdminVenteApp/ventes/links/decision.html:10
+msgid "  publier "
+msgstr ""
+
+#: myAdminVenteApp/templates/myAdminVenteApp/locations/links/decision.html:14
+#: myAdminVenteApp/templates/myAdminVenteApp/ventes/links/decision.html:14
+msgid " rejeter "
+msgstr ""
+
+#: myAdminVenteApp/templates/myAdminVenteApp/locations/links/details.html:11
+#: myAdminVenteApp/templates/myAdminVenteApp/ventes/links/details.html:11
+msgid "Details"
+msgstr "التفاصيل"
+
+#: myAdminVenteApp/templates/myAdminVenteApp/locations/pagination.html:20
+#: myAdminVenteApp/templates/myAdminVenteApp/ventes/pagination.html:20
+msgid "le premier"
+msgstr "الاولي"
+
+#: myAdminVenteApp/templates/myAdminVenteApp/locations/pagination.html:24
+#: myAdminVenteApp/templates/myAdminVenteApp/ventes/pagination.html:24
+msgid "precedant"
+msgstr "السابقة"
+
+#: myAdminVenteApp/templates/myAdminVenteApp/locations/pagination.html:31
+#: myAdminVenteApp/templates/myAdminVenteApp/ventes/pagination.html:31
+msgid "Page "
+msgstr "الصفحة"
+
+#: myAdminVenteApp/templates/myAdminVenteApp/locations/pagination.html:33
+#: myAdminVenteApp/templates/myAdminVenteApp/ventes/pagination.html:33
+msgid "sur"
+msgstr "من"
+
+#: myAdminVenteApp/templates/myAdminVenteApp/locations/pagination.html:40
+#: myAdminVenteApp/templates/myAdminVenteApp/ventes/pagination.html:40
+msgid "suivant"
+msgstr "الموالية"
+
+#: myAdminVenteApp/templates/myAdminVenteApp/locations/pagination.html:44
+#: myAdminVenteApp/templates/myAdminVenteApp/ventes/pagination.html:44
+msgid "le dernier"
+msgstr "الاخيرة"
+
+#: myAdminVenteApp/templates/myAdminVenteApp/nav.html:10
+msgid "fermer"
+msgstr ""
+
+#: myAdminVenteApp/templates/myAdminVenteApp/nav.html:66
+#: myAdminVenteApp/templates/myAdminVenteApp/nav.html:85
+msgid "Menu"
+msgstr ""
+
+#: myAdminVenteApp/templates/myAdminVenteApp/ventes/details_user.html:27
+#: myAdminVenteApp/templates/myAdminVenteApp/ventes/index.html:37
+msgid "Prix"
+msgstr "الثمن"
+
+#~ msgid "ajouter une annonce de location"
+#~ msgstr "اضافة اعلان ايجار"
+
+#~ msgid "Categorie"
+#~ msgstr " التصنيف"
+
+#~ msgid "choisir la categorie "
+#~ msgstr "اختر الصنيف"
+
+#~ msgid "Lieu"
+#~ msgstr "المكان"
+
+#~ msgid "choisir le lieu "
+#~ msgstr "اختر المكان"
+
+#~ msgid "Description"
+#~ msgstr "المواصفات"
+
+#~ msgid "envoyer"
+#~ msgstr "ارسال"
+
+#~ msgid "prix"
+#~ msgstr "الثمن"
+
+#~ msgid "A-UM"
+#~ msgstr "اوقية قديمة"
+
+#~ msgid "retirer"
+#~ msgstr "سحب"
+
+#~ msgid "annuler"
+#~ msgstr "الغاء"
+
+#~ msgid "Details "
+#~ msgstr "التفاصيل"
+
+#~ msgid "N-MR"
+#~ msgstr "اوقية جديدة"
+
+#~ msgid "tel"
+#~ msgstr "هاتف"
+
+#~ msgid ""
+#~ "pas encore publier, en tente de l'accord de l'administration du site,en "
+#~ "general ca prend 30 min au max ( aux horaire de la permence )"
+#~ msgstr ""
+#~ "لم يتم نشر الاعلان بعد للجمهور   في انتظار موافقة الادارة  خلال 30 دقيقة "
+#~ "عادة"
+
+#~ msgid "Editer"
+#~ msgstr "تعديل/ تحكم"
+
+#~ msgid "text"
+#~ msgstr "النص"
+
+#~ msgid "Ajouter"
+#~ msgstr "اضافة"
+
+#~ msgid "image"
+#~ msgstr "صورة"
+
+#~ msgid " retirer "
+#~ msgstr "سحب"
+
+#~ msgid "  l'annonce, j'ai vendue "
+#~ msgstr " الاعلان تمت عملية البيع"
+
+#~ msgid "  l'annonce, pour autre raison "
+#~ msgstr " الاعلان لاسباب اخري"
+
+#~ msgid "supprimer"
+#~ msgstr "حذف"
+
+#~ msgid "img"
+#~ msgstr "صورة"
+
+#~ msgid "mes annonces de location"
+#~ msgstr "اعلاناتي للايجار"
+
+#~ msgid "list des annonces de location"
+#~ msgstr "لائحة اعلانات الايجار"
+
+#~ msgid "Rechercher"
+#~ msgstr "بحث"
+
+#~ msgid "  Formulaire de recherche : "
+#~ msgstr " استمارة البحث"
+
+#~ msgid " loye mensuelle minimale en A-UM  "
+#~ msgstr "الايجار الشهري الاقل بالاوقية القديمة"
+
+#~ msgid " loye mensuelle maximale en A-UM  "
+#~ msgstr "الايجار الشهري الاعلي بالاوقية القديمة"
+
+#~ msgid "  Formulaire de recherche avance: "
+#~ msgstr " استمارة البحث المتقدم"
+
+#~ msgid "Region"
+#~ msgstr "المكان"
+
+#~ msgid "modifier une annonce"
+#~ msgstr "تغيير الاعلان"
+
+#~ msgid "Lieux"
+#~ msgstr "المكان"

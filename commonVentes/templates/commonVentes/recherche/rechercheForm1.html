@@ -1,0 +1,71 @@
+{% extends 'baseApp/base.htm' %}
+{% load i18n %} 
+
+{% block content %}
+<h1>  {% trans  "Rechercher/vente" %} </h1>
+
+<!-- Form de recherche -->
+<form class="w3-container" method="POST" 
+action="{% url 'commonVentes:recherche_handler_vente' lang   %}"
+{% include 'baseApp/dir_html.html' %}
+>
+{% csrf_token %}
+  <fieldset>
+	  <legend>    {% blocktrans %}  Formulaire de recherche/vente : {% endblocktrans %}     </legend>
+      
+        {{ form.non_field_errors }}
+
+        <div>{{ form.categorie.errors }}</div>
+  <label  >
+        {% trans "Categorie"  %}
+        </label>
+   <select
+   id="id_categorie"
+    class="w3-select w3-border w3-light-grey" 
+     style="text-align:;" 
+   name="categorie" 
+   required />
+   <option value="" > 
+   {% blocktrans %}choisir la categorie {% endblocktrans %}</option>
+        
+        {% for categorie in categories %}
+          <option value="{{ categorie.id }}">
+          {% if lang == 'fr'%}
+              {{categorie.nom}} 
+          {% else %}
+          {{categorie.nom_ar}} 
+          {% endif %}
+          </option>
+        {% endfor %}
+  </select>
+
+
+   
+    <div>{{ form.prix.errors }}</div>
+  <label  >
+	 {% blocktrans %} prix  en ancien ouguiya {% endblocktrans %}    
+	  </label>
+  <input 
+        class="w3-input w3-border w3-light-grey w3-right-align" 
+        type="number" 
+        name="prix"
+        id="id_prix"
+      
+        required
+        />
+       
+         
+   
+   <input type="submit" value="{% blocktrans %}Rechercher{% endblocktrans %}" class="w3-btn w3-black">
+   </fieldset>
+
+   <br> <a href= "{% url 'commonVentes:recherche_avance_vente' lang   %}"
+                {% include 'baseApp/dir_text.html'%}
+                 onclick="w3_close()" >
+                 <b>{% trans 'recherche avance' %} </b>
+                 </a>
+
+  
+</form>
+
+{% endblock content %}

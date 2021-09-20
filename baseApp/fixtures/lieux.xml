@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+  <object model="baseApp.lieux" pk="1">
+    <field name="date_add" type="DateTimeField">2019-09-02T16:23:56.815847+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-02T16:38:24.704864+00:00</field>
+    <field name="nom" type="CharField">NKTT-arafatt</field>
+    <field name="nom_ar" type="CharField">نواكشوط-عرفات</field>
+  </object>
+  <object model="baseApp.lieux" pk="2">
+    <field name="date_add" type="DateTimeField">2019-09-02T16:24:09.241709+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-02T16:38:43.497303+00:00</field>
+    <field name="nom" type="CharField">NKTT-teyarett</field>
+    <field name="nom_ar" type="CharField">نواكشوط-تيارت</field>
+  </object>
+  <object model="baseApp.lieux" pk="3">
+    <field name="date_add" type="DateTimeField">2019-09-02T16:24:22.789747+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-02T16:39:11.162048+00:00</field>
+    <field name="nom" type="CharField">NKTT-darnaim</field>
+    <field name="nom_ar" type="CharField">نواكشوط-دار النعيم</field>
+  </object>
+  <object model="baseApp.lieux" pk="4">
+    <field name="date_add" type="DateTimeField">2019-09-02T16:24:38.742386+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-02T16:40:01.828061+00:00</field>
+    <field name="nom" type="CharField">NKTT-tevreghzeina</field>
+    <field name="nom_ar" type="CharField">نواكشوط-تفرغ زينة</field>
+  </object>
+  <object model="baseApp.lieux" pk="5">
+    <field name="date_add" type="DateTimeField">2019-09-02T16:25:03.401564+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-02T16:40:23.208050+00:00</field>
+    <field name="nom" type="CharField">NKTT-leksar</field>
+    <field name="nom_ar" type="CharField">نواكشوط-لكصر</field>
+  </object>
+  <object model="baseApp.lieux" pk="6">
+    <field name="date_add" type="DateTimeField">2019-09-02T16:25:42.160035+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-02T16:41:03.417633+00:00</field>
+    <field name="nom" type="CharField">NKTT-mina</field>
+    <field name="nom_ar" type="CharField">نواكشوط-الميناء</field>
+  </object>
+  <object model="baseApp.lieux" pk="7">
+    <field name="date_add" type="DateTimeField">2019-09-02T16:26:04.988746+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-02T16:41:30.406832+00:00</field>
+    <field name="nom" type="CharField">NKTT-ryad</field>
+    <field name="nom_ar" type="CharField">نواكشوط-رياض</field>
+  </object>
+  <object model="baseApp.lieux" pk="8">
+    <field name="date_add" type="DateTimeField">2019-09-02T16:26:27.882816+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-02T16:43:54.691321+00:00</field>
+    <field name="nom" type="CharField">NKTT-sebkha</field>
+    <field name="nom_ar" type="CharField">نواكشوط-السبخة</field>
+  </object>
+  <object model="baseApp.lieux" pk="9">
+    <field name="date_add" type="DateTimeField">2019-09-02T16:26:42.418341+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-02T16:42:02.932328+00:00</field>
+    <field name="nom" type="CharField">NKTT-toujounin</field>
+    <field name="nom_ar" type="CharField">نواكشوط-توجنين</field>
+  </object>
+  <object model="baseApp.lieux" pk="10">
+    <field name="date_add" type="DateTimeField">2019-09-02T16:27:12.123577+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-02T16:37:09.114761+00:00</field>
+    <field name="nom" type="CharField">Nouadhibou</field>
+    <field name="nom_ar" type="CharField">انواذيبو</field>
+  </object>
+  <object model="baseApp.lieux" pk="11">
+    <field name="date_add" type="DateTimeField">2019-09-02T16:27:27.040178+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-02T16:36:29.206408+00:00</field>
+    <field name="nom" type="CharField">Hawd-charqui</field>
+    <field name="nom_ar" type="CharField">الحوض الشرقي</field>
+  </object>
+  <object model="baseApp.lieux" pk="12">
+    <field name="date_add" type="DateTimeField">2019-09-02T16:27:37.092562+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-02T16:35:49.728795+00:00</field>
+    <field name="nom" type="CharField">Hawd-gharbi</field>
+    <field name="nom_ar" type="CharField">الحوض الغربي</field>
+  </object>
+  <object model="baseApp.lieux" pk="13">
+    <field name="date_add" type="DateTimeField">2019-09-02T16:28:01.778434+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-02T16:35:15.096316+00:00</field>
+    <field name="nom" type="CharField">Lessaba</field>
+    <field name="nom_ar" type="CharField">لعصاية</field>
+  </object>
+  <object model="baseApp.lieux" pk="14">
+    <field name="date_add" type="DateTimeField">2019-09-02T16:28:17.161813+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-02T16:34:38.234189+00:00</field>
+    <field name="nom" type="CharField">Lebrakna</field>
+    <field name="nom_ar" type="CharField">لبراكنة</field>
+  </object>
+  <object model="baseApp.lieux" pk="15">
+    <field name="date_add" type="DateTimeField">2019-09-02T16:28:30.053568+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-02T16:34:02.312957+00:00</field>
+    <field name="nom" type="CharField">Trarza</field>
+    <field name="nom_ar" type="CharField">اترازة</field>
+  </object>
+  <object model="baseApp.lieux" pk="16">
+    <field name="date_add" type="DateTimeField">2019-09-02T16:29:12.354609+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-02T16:33:31.407638+00:00</field>
+    <field name="nom" type="CharField">Guidi-magha</field>
+    <field name="nom_ar" type="CharField">كيديماغه</field>
+  </object>
+  <object model="baseApp.lieux" pk="17">
+    <field name="date_add" type="DateTimeField">2019-09-02T16:29:38.215503+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-02T16:33:03.622254+00:00</field>
+    <field name="nom" type="CharField">Gorgol</field>
+    <field name="nom_ar" type="CharField">كوركل</field>
+  </object>
+  <object model="baseApp.lieux" pk="18">
+    <field name="date_add" type="DateTimeField">2019-09-02T16:29:55.090701+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-02T16:32:47.140979+00:00</field>
+    <field name="nom" type="CharField">Teguanet</field>
+    <field name="nom_ar" type="CharField">تكانت</field>
+  </object>
+  <object model="baseApp.lieux" pk="19">
+    <field name="date_add" type="DateTimeField">2019-09-02T16:30:19.291455+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-02T16:32:21.966971+00:00</field>
+    <field name="nom" type="CharField">Inchiri</field>
+    <field name="nom_ar" type="CharField">اينشيري</field>
+  </object>
+  <object model="baseApp.lieux" pk="20">
+    <field name="date_add" type="DateTimeField">2019-09-02T16:30:41.097622+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-02T16:31:57.225941+00:00</field>
+    <field name="nom" type="CharField">Adrar</field>
+    <field name="nom_ar" type="CharField">ادرار</field>
+  </object>
+  <object model="baseApp.lieux" pk="21">
+    <field name="date_add" type="DateTimeField">2019-09-02T16:30:56.283938+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-02T16:31:35.064744+00:00</field>
+    <field name="nom" type="CharField">Tiris-zemour</field>
+    <field name="nom_ar" type="CharField">تيرس الزمور</field>
+  </object>
+</django-objects>

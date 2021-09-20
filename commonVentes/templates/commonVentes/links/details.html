@@ -1,0 +1,15 @@
+
+{% load i18n %} 
+
+
+<div class="w3-left-align">
+
+        <a 
+        href= "{% url 'commonVentes:details_vente' vente.id  lang %}"
+        class="w3-btn w3-black" >
+    
+        {% trans "Details"  %}
+    
+        </a>
+
+    </div>

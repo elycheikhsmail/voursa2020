@@ -1,0 +1,75 @@
+{% extends 'baseApp/base.htm' %}
+{% load static %}
+{% load humanize %}
+{% load i18n %}
+
+
+{% block content %}
+
+<!--  -->
+
+<div class="w3-row">
+	<div class="w3-col s3 w3-white w3-center">
+		<img src="{% static 'baseApp/img/pas_img.png' %}" 
+                    alt="img" width="100%" height="180px"/>
+                </a>
+
+     </div>
+     
+    <div class="w3-col s9  w3-left-align">
+		<div class="w3-container w3-white">
+			 			{% if lang == 'fr' %}
+						       {{vente.categorie.nom}} / {{vente.lieux.nom }}
+						   {% else %}
+						       {{vente.categorie.nom_ar}} / {{vente.lieux.nom_ar }}
+						   {% endif %}
+			 <br>
+			<div style="text-align:center;">
+					{{ vente.desc }} 
+			</div>
+		
+
+			<div style="text-align:center;">
+					<div>  <sup> {% blocktrans %}prix{% endblocktrans %}  </sup>
+					   <b style="font-size:30px;">
+							   {{vente.prix}}
+						   </b> 
+						 <sub>
+							 <small> {% blocktrans %}ancien ouguiya{% endblocktrans %}</small>
+						 </sub>
+					   </div>
+			</div> 
+			<div>
+		 <form method='post'>
+           {% csrf_token %}
+		   <input type="submit" 
+		   value="{% blocktrans %}retirer{% endblocktrans %}" 
+		   class="w3-btn w3-yellow" / >
+		   </form>
+		   <p>
+ <a class="w3-btn w3-black" 
+                        href="{% url  'commonVentes:details_users_vente' v_id  lang %}"> 
+
+                        {% blocktrans %}annuler{% endblocktrans %}
+	            </a>
+
+
+		   </p>
+
+                    
+                 
+			<div>
+			 
+               <br/><br/>
+
+	     </div>
+	</div>
+</div>
+
+<br>
+<hr>
+<br>
+
+
+
+{% endblock %}

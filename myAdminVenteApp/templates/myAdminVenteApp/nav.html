@@ -1,0 +1,100 @@
+{% load i18n %}
+
+<div class="w3-row-padding w3-sidebar w3-bar-block w3-border-right w3-gray" 
+ style="display:none" 
+ id="mySidebar"
+ {% include 'baseApp/dir_html.html'%}
+ >
+        <button onclick="w3_close()"  class="w3-button w3-teal w3-xlarge"
+{% include 'baseApp/dir_html.html'%} >
+                {% trans 'fermer' %} &times;
+  </button>
+      
+
+                 <div class="w3-bar-item w3-button">
+                <a href="{% url 'myAdminVenteApp:tels_codes' lang  %}"
+                class="w3-bar-item  w3-brown w3-border w3-margin-top" 
+                {% include 'baseApp/dir_text.html'%}
+                onclick="w3_close()" >
+                         codes des tels des nouveaux utilisateurs 
+
+                </a>
+                </div>
+
+                    <div class="w3-bar-item w3-button">
+                <a href="{% url 'myAdminVenteApp:tels_codes2' lang  %}"
+                class="w3-bar-item  w3-brown w3-border w3-margin-top" 
+                {% include 'baseApp/dir_text.html'%}
+                onclick="w3_close()" >
+                         codes des tels des ansienne utilisateurs 
+
+                </a>
+                </div>
+
+                <div class="w3-bar-item w3-button">
+                <a href= "{% url 'myAdminVenteApp:index_user_vente' lang %}"
+                class="w3-bar-item  w3-brown  w3-border w3-margin-top" 
+                {% include 'baseApp/dir_text.html'%}
+                onclick="w3_close()" >
+                        ventes en attentes
+
+                </a>
+                </div>
+
+                  <div class="w3-bar-item w3-button">
+                <a href= "{% url 'myAdminVenteApp:index_user_vente2' lang %}"
+                class="w3-bar-item  w3-brown  w3-border w3-margin-top" 
+                {% include 'baseApp/dir_text.html'%}
+                onclick="w3_close()" >
+                        location en attentes
+
+                </a>
+                </div>
+
+
+
+        </div>
+
+        <!-- Page Content -->
+        {% if lang == 'ar' %}
+                <div class="w3-teal w3-row-padding"
+{% include 'baseApp/dir_html.html'%}
+>
+                        <button class="w3-button w3-teal" 
+  onclick="w3_open()">
+                                <h1>
+                                        {% trans "Menu" %}  ☰ </h1>
+                        </button>
+                        <button class="w3-button w3-teal w3-left" >
+                                <a href= "{% url 'commonVentes:index_vente'  'fr' %}"
+          
+                {% include 'baseApp/dir_text.html'%}
+                onclick="w3_close()" >
+                                        <h1> Francais </h1>
+                                </a>
+                        </button>
+
+                </div>
+        {% else %}
+                <div class="w3-teal w3-row-padding"
+{% include 'baseApp/dir_html.html'%}
+>
+                        <button class="w3-button w3-teal" 
+  onclick="w3_open()">
+                                <h1>
+                                        {% trans "Menu" %}  ☰ </h1>
+                        </button>
+                        <button class="w3-button w3-teal w3-right" >
+                                <a href= "{% url 'commonVentes:index_vente'  'ar' %}"
+          
+                {% include 'baseApp/dir_text.html'%}
+                onclick="w3_close()" >
+                                        <h1> 
+                 العربية 
+
+                 </h1>
+                                </a>
+                        </button>
+
+                </div>
+        {% endif %}

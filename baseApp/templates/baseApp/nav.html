@@ -1,0 +1,210 @@
+{% load i18n %}
+
+<div class="w3-row-padding w3-sidebar w3-bar-block w3-border-right w3-gray" 
+ style="display:none" 
+ id="mySidebar"
+ {% include 'baseApp/dir_html.html'%}
+ >
+        <button onclick="w3_close()"  class="w3-button w3-teal w3-xlarge"
+{% include 'baseApp/dir_html.html'%} >
+                {% trans 'fermer' %} &times;
+  </button>
+        <!--accordion recherche -->
+        <div class="w3-bar-item w3-button" onclick="myaccfunc('r')">
+                <button class="w3-bar-item   w3-brown  w3-border w3-margin-top " {% include 'baseApp/dir_text.html'%} > 
+                 {% blocktrans %}  Recherche {% endblocktrans %}
+                 <i class="fa fa-caret-down"></i>
+                </button>
+
+
+                <div  id="r"  class="w3-hide w3-white w3-card-4"  {% include 'baseApp/dir_text.html'%}>
+
+                        <a href= "{% url 'commonVentes:recherche_vente' lang   %}"
+                         class="w3-bar-item w3-black  w3-border w3-margin-top " 
+                        onclick="w3_close()"
+                         {% include 'baseApp/dir_text.html'%}>
+                                {% blocktrans %} recherche-vente {% endblocktrans %}
+                        </a>
+
+                        <a href= "{% url 'commonLocations:recherche_vente' lang   %}"
+                        class="w3-bar-item w3-black  w3-border w3-margin-top "
+                        onclick="w3_close()"
+                        {% include 'baseApp/dir_text.html'%}>
+                        {% blocktrans %} recherche-location {% endblocktrans %}
+                        </a>
+
+                </div>
+        </div>
+        <!-- fin accordion recherche -->
+
+        <!--accordion offre de vente et de location -->
+        <div class="w3-bar-item w3-button" onclick="myaccfunc('vl')">
+                <button class="w3-bar-item   w3-brown  w3-border w3-margin-top " 
+                 {% include 'baseApp/dir_text.html'%} > 
+                 {% blocktrans %} offres des ventes et des locations {% endblocktrans %}
+                 <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div  id="vl" class="w3-hide w3-white w3-card-4" {% include 'baseApp/dir_text.html'%}>
+
+                <a href= "{% url 'commonVentes:index_vente' lang   %}"
+                  class="w3-bar-item w3-black  w3-border w3-margin-top " onclick="w3_close()"
+                   {% include 'baseApp/dir_text.html'%}>
+                    {% blocktrans %} offres des ventes {% endblocktrans %}
+                        </a>
+                
+                <a href= "{% url 'commonLocations:index_vente' lang   %}"
+                class="w3-bar-item w3-black  w3-border w3-margin-top "  onclick="w3_close()" 
+                {% include 'baseApp/dir_text.html'%}>
+                    {% blocktrans %}  offres des location {% endblocktrans %}
+                 </a>
+
+                </div>
+        </div>
+        <!-- fin accordion offre de vente et de location -->
+
+        {% if request.user.is_authenticated %}
+
+                <!--accordion ajouter une annonce -->
+                <div class="w3-bar-item w3-button"
+    onclick="myaccfunc('aa')">
+                        <button class="w3-bar-item   w3-brown  w3-border w3-margin-top " 
+       {% include 'baseApp/dir_text.html'%} 
+      > 
+      {% blocktrans %} ajouter une annonce  {% endblocktrans %}
+       <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div  
+      id="aa"
+      class="w3-hide w3-white w3-card-4"
+       {% include 'baseApp/dir_text.html'%}>
+
+                                <a href= "{% url 'commonVentes:create_vente'  lang  %}"
+        class="w3-bar-item w3-black  w3-border w3-margin-top " 
+        nclick="w3_close()"
+         {% include 'baseApp/dir_text.html'%}>
+                                        {% blocktrans %} ajouter une annonce de vente{% endblocktrans %}
+                                </a>
+
+                                <a href= "{% url 'commonLocations:create_vente'  lang  %}"
+        class="w3-bar-item w3-black  w3-border w3-margin-top " 
+        nclick="w3_close()"
+         {% include 'baseApp/dir_text.html'%}>
+                                        {% blocktrans %}  ajouter une annonce de location {% endblocktrans %}
+                                </a>
+
+                        </div>
+                </div>
+                <!-- fin  accordion ajouter une annonce -->
+
+                <!--accordion   mes annonce -->
+                <div class="w3-bar-item w3-button"
+    onclick="myaccfunc('ma')">
+                        <button class="w3-bar-item   w3-brown  w3-border w3-margin-top " 
+       {% include 'baseApp/dir_text.html'%} 
+      > 
+      {% blocktrans %} mes   annonces {% endblocktrans %} 
+       <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div  
+      id="ma"
+      class="w3-hide w3-white w3-card-4"
+       {% include 'baseApp/dir_text.html'%}>
+
+                                <a href= "{% url 'commonVentes:index_user_vente' lang   %}"
+        class="w3-bar-item w3-black  w3-border w3-margin-top " 
+        nclick="w3_close()"
+         {% include 'baseApp/dir_text.html'%}>
+                                        {% blocktrans %} mes annonces des ventes {% endblocktrans %}
+                                </a>
+
+                                <a href= "{% url 'commonLocations:index_user_vente' lang   %}"
+        class="w3-bar-item w3-black  w3-border w3-margin-top " 
+        nclick="w3_close()"
+         {% include 'baseApp/dir_text.html'%}>
+                                        {% blocktrans %} mes annonces des locations {% endblocktrans %}
+                                </a>
+
+                        </div>
+                </div>
+                <!-- fin  accordion mes annonce -->
+                 <div class="w3-bar-item w3-button" >
+
+
+                <a href= "{% url 'usersApp:logout' lang   %}"
+                class="w3-bar-item  w3-brown  w3-border w3-margin-top" 
+                {% include 'baseApp/dir_text.html'%}
+                onclick="w3_close()" >
+                        {% trans 'Deconnecte' %}
+
+                </a>
+                </div>
+
+        {% else %}
+                 <div class="w3-bar-item w3-button">
+                <a href="{% url 'usersApp:login' lang  %}"
+                class="w3-bar-item  w3-brown w3-border w3-margin-top" 
+                {% include 'baseApp/dir_text.html'%}
+                onclick="w3_close()" >
+                        {% trans 'Connexion' %}
+
+                </a>
+                </div>
+
+                <div class="w3-bar-item w3-button">
+                <a href= "{% url 'usersApp:preRegister' lang %}"
+                class="w3-bar-item  w3-brown  w3-border w3-margin-top" 
+                {% include 'baseApp/dir_text.html'%}
+                onclick="w3_close()" >
+                        {% trans "s'inscrire" %}
+
+                </a>
+                </div>
+
+                {% endif%}
+
+        </div>
+
+        <!-- Page Content -->
+        {% if lang == 'ar' %}
+                <div class="w3-teal w3-row-padding"
+{% include 'baseApp/dir_html.html'%}
+>
+                        <button class="w3-button w3-teal" 
+  onclick="w3_open()">
+                                <h1>
+                                        {% trans "Menu" %}  ☰ </h1>
+                        </button>
+                        <button class="w3-button w3-teal w3-left" >
+                                <a href= "{% url 'commonVentes:index_vente'  'fr' %}"
+          
+                {% include 'baseApp/dir_text.html'%}
+                onclick="w3_close()" >
+                                        <h1> Francais </h1>
+                                </a>
+                        </button>
+
+                </div>
+        {% else %}
+                <div class="w3-teal w3-row-padding"
+{% include 'baseApp/dir_html.html'%}
+>
+                        <button class="w3-button w3-teal" 
+  onclick="w3_open()">
+                                <h1>
+                                        {% trans "Menu" %}  ☰ </h1>
+                        </button>
+                        <button class="w3-button w3-teal w3-right" >
+                                <a href= "{% url 'commonVentes:index_vente'  'ar' %}"
+          
+                {% include 'baseApp/dir_text.html'%}
+                onclick="w3_close()" >
+                                        <h1> 
+                 العربية 
+
+                 </h1>
+                                </a>
+                        </button>
+
+                </div>
+        {% endif %}

@@ -1,0 +1,16 @@
+{% load i18n %} 
+{% load static %}
+
+
+<div class="w3-border">
+     {%  if  auth %} 
+      <a href="{% url  'commonVentes:details_users_vente' vente.id  lang %}">
+     {% else %}
+        <a href= "{% url 'commonVentes:details_vente' vente.id  lang %}">
+    {% endif %}
+    <img src="{% static 'baseApp/img/pas_img.png' %}" 
+                    alt="img" width="80%"  />
+                </a>
+
+</div>
+<span class="w3-text-center"> 0   {%  trans 'images' %}  </span>

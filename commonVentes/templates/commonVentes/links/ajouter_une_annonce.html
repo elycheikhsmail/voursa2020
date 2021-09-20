@@ -1,0 +1,21 @@
+{% load i18n %} 
+
+        <p>
+     <div>
+        <a class="w3-btn w3-black" 
+                          href="{% url  'commonVentes:create_vente'   lang %}"> 
+                          {%   trans 'Ajouter une annonce de vente'  %}
+                      
+                  </a>
+                  <hr>
+                  </div>
+      <div>
+        <a class="w3-btn w3-black" 
+                          href="{% url  'commonLocations:create_vente'   lang %}"> 
+                          {%   trans 'Ajouter une annonce de location '  %}
+                      
+                  </a>
+                  </div>
+
+
+        </p>

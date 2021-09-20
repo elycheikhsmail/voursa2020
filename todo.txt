@@ -1,0 +1,33 @@
+EN LOCAL export local=1
+
+- revoire le menu
+
+
+- copier le lien de annonce
+
+- traduction
+
+- preparer pour la prod
+
+- deployer
+
+
+tel
+   41068686
+   31068686
+
+- vue js pour/version final
+  - la traduction
+  - alleger le code html a l'aide des component
+
+
+
+
+- save recherche pour la version final
+
+- reorganisation
+
+
+-titre des pages
+
+- conserver une copie du travail google drive [ok]

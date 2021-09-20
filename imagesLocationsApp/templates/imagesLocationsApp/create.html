@@ -1,0 +1,22 @@
+{% extends 'baseApp/base.htm' %}
+{% load i18n %} 
+
+{% block content%}
+    <form method = "post" enctype="multipart/form-data"> 
+        {% csrf_token %} 
+        {{ form.as_p }} 
+        <button class="w3-btn w3-black" type="submit">
+        {% blocktrans %}Upload{% endblocktrans %} 
+        </button> 
+    </form> 
+    <p>
+    {% blocktrans %} Attention{% endblocktrans %}:
+    </p>
+    <p> {% blocktrans %} les format des images autorises sont png, jpg, jpeg, gif {% endblocktrans %} </p>
+    <div>
+    <br>
+    <a href= "{% url 'commonLocations:index_user_vente' lang %}" class="w3-btn w3-black" >
+    {% blocktrans %} ne pas ajout d'une image a cette annonce {% endblocktrans %}
+     </a><br>
+     </div>
+{% endblock content%}

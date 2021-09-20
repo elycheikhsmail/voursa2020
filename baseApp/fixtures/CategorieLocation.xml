@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+  <object model="baseApp.categorielocation" pk="1">
+    <field name="date_add" type="DateTimeField">2019-09-03T01:40:18.803554+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-03T12:28:22.133574+00:00</field>
+    <field name="nom" type="CharField">engins et moteurs</field>
+    <field name="nom_ar" type="CharField">الاليات و الماكينات</field>
+  </object>
+  <object model="baseApp.categorielocation" pk="2">
+    <field name="date_add" type="DateTimeField">2019-09-03T01:40:34.513744+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-03T12:27:10.109065+00:00</field>
+    <field name="nom" type="CharField">voitures</field>
+    <field name="nom_ar" type="CharField">سيارات</field>
+  </object>
+  <object model="baseApp.categorielocation" pk="3">
+    <field name="date_add" type="DateTimeField">2019-09-03T12:17:23.437082+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-03T12:26:51.791520+00:00</field>
+    <field name="nom" type="CharField">maisons</field>
+    <field name="nom_ar" type="CharField">منازل</field>
+  </object>
+  <object model="baseApp.categorielocation" pk="4">
+    <field name="date_add" type="DateTimeField">2019-09-03T12:18:16.236467+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-03T12:26:22.510592+00:00</field>
+    <field name="nom" type="CharField">appartements</field>
+    <field name="nom_ar" type="CharField">شقق</field>
+  </object>
+  <object model="baseApp.categorielocation" pk="5">
+    <field name="date_add" type="DateTimeField">2019-09-03T12:18:37.049567+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-03T12:26:08.130827+00:00</field>
+    <field name="nom" type="CharField">appartements meubles</field>
+    <field name="nom_ar" type="CharField">شقق مفروشة</field>
+  </object>
+  <object model="baseApp.categorielocation" pk="6">
+    <field name="date_add" type="DateTimeField">2019-09-03T12:19:03.091802+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-03T12:25:29.350784+00:00</field>
+    <field name="nom" type="CharField">studios</field>
+    <field name="nom_ar" type="CharField">استديو</field>
+  </object>
+  <object model="baseApp.categorielocation" pk="7">
+    <field name="date_add" type="DateTimeField">2019-09-03T12:19:16.183077+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-03T12:25:14.842359+00:00</field>
+    <field name="nom" type="CharField">studios meubles</field>
+    <field name="nom_ar" type="CharField">استديو مفروش</field>
+  </object>
+  <object model="baseApp.categorielocation" pk="8">
+    <field name="date_add" type="DateTimeField">2019-09-03T12:19:36.534764+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-03T12:24:20.029289+00:00</field>
+    <field name="nom" type="CharField">boutique</field>
+    <field name="nom_ar" type="CharField">بوتيك</field>
+  </object>
+  <object model="baseApp.categorielocation" pk="9">
+    <field name="date_add" type="DateTimeField">2019-09-03T12:20:06.744613+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-03T12:23:37.871789+00:00</field>
+    <field name="nom" type="CharField">magasin</field>
+    <field name="nom_ar" type="CharField">مخزن(magasin)</field>
+  </object>
+  <object model="baseApp.categorielocation" pk="10">
+    <field name="date_add" type="DateTimeField">2019-09-03T12:20:39.074368+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-03T12:22:44.884796+00:00</field>
+    <field name="nom" type="CharField">terrains</field>
+    <field name="nom_ar" type="CharField">قطع ارضية</field>
+  </object>
+  <object model="baseApp.categorielocation" pk="11">
+    <field name="date_add" type="DateTimeField">2019-09-03T12:21:27.328049+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-03T12:22:28.832572+00:00</field>
+    <field name="nom" type="CharField">autres categrie</field>
+    <field name="nom_ar" type="CharField">تصنيفات اخري</field>
+  </object>
+</django-objects>

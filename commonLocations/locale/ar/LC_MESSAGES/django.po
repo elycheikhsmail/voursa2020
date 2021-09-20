@@ -1,0 +1,281 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-08 04:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: commonLocations/templates/commonLocations/create.html:5
+msgid "ajouter une annonce de location"
+msgstr "اضافة اعلان ايجار"
+
+#: commonLocations/templates/commonLocations/create.html:15
+#: commonLocations/templates/commonLocations/recherche/rechercheForm1.html:20
+#: commonLocations/templates/commonLocations/recherche/rechercheForm2.html:20
+#: commonLocations/templates/commonLocations/update.html:11
+msgid "Categorie"
+msgstr " التصنيف"
+
+#: commonLocations/templates/commonLocations/create.html:21
+#: commonLocations/templates/commonLocations/recherche/rechercheForm1.html:28
+#: commonLocations/templates/commonLocations/recherche/rechercheForm2.html:28
+#: commonLocations/templates/commonLocations/update.html:14
+msgid "choisir la categorie "
+msgstr "اختر الصنيف"
+
+#: commonLocations/templates/commonLocations/create.html:37
+msgid "Lieu"
+msgstr "المكان"
+
+#: commonLocations/templates/commonLocations/create.html:45
+#: commonLocations/templates/commonLocations/recherche/rechercheForm2.html:50
+#: commonLocations/templates/commonLocations/update.html:39
+msgid "choisir le lieu "
+msgstr "اختر المكان"
+
+#: commonLocations/templates/commonLocations/create.html:61
+msgid " loye mensuelle en ancien ouguiya  "
+msgstr "   الايجار الشهري بالاوقية القديمة"
+
+#: commonLocations/templates/commonLocations/create.html:76
+#: commonLocations/templates/commonLocations/update.html:66
+msgid "Description"
+msgstr "المواصفات"
+
+#: commonLocations/templates/commonLocations/create.html:91
+#: commonLocations/templates/commonLocations/update.html:77
+msgid "envoyer"
+msgstr "ارسال"
+
+#: commonLocations/templates/commonLocations/delete.html:33
+msgid "loyer mensuelle en ancien ouguiya"
+msgstr " الايجار الشهري"
+
+#: commonLocations/templates/commonLocations/delete.html:38
+#: commonLocations/templates/commonLocations/recherche/rechercheEXTRA.html:30
+#: commonLocations/templates/commonLocations/recherche/rechercheR_draft.html:42
+#: commonLocations/templates/commonLocations/recherche/rechercheResult.html:46
+#: commonLocations/templates/commonLocations/recherche/resultatRecherchePagination.html:40
+msgid "A-UM"
+msgstr "اوقية قديمة"
+
+#: commonLocations/templates/commonLocations/delete.html:46
+msgid "retirer"
+msgstr "سحب"
+
+#: commonLocations/templates/commonLocations/delete.html:53
+msgid "annuler"
+msgstr "الغاء"
+
+#: commonLocations/templates/commonLocations/details.html:8
+msgid "Details "
+msgstr "التفاصيل"
+
+#: commonLocations/templates/commonLocations/details.html:23
+msgid "loyer mensuelle "
+msgstr " الايجار الشهري"
+
+#: commonLocations/templates/commonLocations/details.html:25
+#: commonLocations/templates/commonLocations/details_user.html:39
+#: commonLocations/templates/commonLocations/index.html:49
+msgid "ancien ouguiya"
+msgstr "اوقية قديمة"
+
+#: commonLocations/templates/commonLocations/details.html:28
+msgid "tel"
+msgstr "هاتف"
+
+#: commonLocations/templates/commonLocations/details_user.html:8
+#: commonLocations/templates/commonLocations/links/editer_gerer.html:4
+msgid "Editer/gerer"
+msgstr "تعديل/ تحكم"
+
+#: commonLocations/templates/commonLocations/details_user.html:12
+msgid ""
+"pas encore publier, en tente de l'accord de l'administration du site,en "
+"general ca prend 30 min au max ( aux horaire de la permence )"
+msgstr ""
+"لم يتم نشر الاعلان بعد للجمهور   في انتظار موافقة الادارة  خلال 30 دقيقة عادة"
+
+#: commonLocations/templates/commonLocations/details_user.html:32
+#: commonLocations/templates/commonLocations/index.html:44
+msgid "loyer mensuelle"
+msgstr " الايجار الشهري"
+
+#: commonLocations/templates/commonLocations/details_user.html:51
+msgid "Editer"
+msgstr "تعديل/ تحكم"
+
+#: commonLocations/templates/commonLocations/details_user.html:52
+msgid "text"
+msgstr "النص"
+
+#: commonLocations/templates/commonLocations/details_user.html:55
+msgid "Ajouter"
+msgstr "اضافة"
+
+#: commonLocations/templates/commonLocations/details_user.html:57
+msgid "image"
+msgstr "صورة"
+
+#: commonLocations/templates/commonLocations/details_user.html:62
+#: commonLocations/templates/commonLocations/details_user.html:69
+msgid " retirer "
+msgstr "سحب"
+
+#: commonLocations/templates/commonLocations/details_user.html:64
+msgid "  l'annonce, j'ai vendue "
+msgstr " الاعلان تمت عملية البيع"
+
+#: commonLocations/templates/commonLocations/details_user.html:71
+msgid "  l'annonce, pour autre raison "
+msgstr " الاعلان لاسباب اخري"
+
+#: commonLocations/templates/commonLocations/details_user.html:89
+msgid "supprimer"
+msgstr "حذف"
+
+#: commonLocations/templates/commonLocations/details_user.html:89
+msgid "img"
+msgstr "صورة"
+
+#: commonLocations/templates/commonLocations/img/download.html:15
+#: commonLocations/templates/commonLocations/img/pas_img.html:16
+msgid "images"
+msgstr "صورة"
+
+#: commonLocations/templates/commonLocations/index.html:12
+msgid "mes annonces de location"
+msgstr "اعلاناتي للايجار"
+
+#: commonLocations/templates/commonLocations/index.html:14
+msgid "offres des locations"
+msgstr "اعلانات الايجار"
+
+#: commonLocations/templates/commonLocations/index.html:55
+msgid " publier le : "
+msgstr "نشر بتاريخ"
+
+#: commonLocations/templates/commonLocations/index.html:93
+msgid " il n'y a pas d'annonce de location "
+msgstr "لا يوجد اعلان ايجار "
+
+#: commonLocations/templates/commonLocations/links/ajouter_une_annonce.html:8
+msgid "Ajouter une annonce de vente"
+msgstr " اضافة اعلان بيع"
+
+#: commonLocations/templates/commonLocations/links/ajouter_une_annonce.html:16
+msgid "Ajouter une annonce de location "
+msgstr "اضافة اعلان ايجار"
+
+#: commonLocations/templates/commonLocations/links/details.html:11
+msgid "Details"
+msgstr "التفاصيل"
+
+#: commonLocations/templates/commonLocations/pagination.html:20
+msgid "le premier"
+msgstr "الاولي"
+
+#: commonLocations/templates/commonLocations/pagination.html:24
+msgid "precedant"
+msgstr "السابقة"
+
+#: commonLocations/templates/commonLocations/pagination.html:31
+msgid "Page "
+msgstr "الصفحة"
+
+#: commonLocations/templates/commonLocations/pagination.html:33
+msgid "sur"
+msgstr "من"
+
+#: commonLocations/templates/commonLocations/pagination.html:40
+msgid "suivant"
+msgstr "الموالية"
+
+#: commonLocations/templates/commonLocations/pagination.html:44
+msgid "le dernier"
+msgstr "الاخيرة"
+
+#: commonLocations/templates/commonLocations/recherche/rechercheEXTRA.html:23
+#: commonLocations/templates/commonLocations/recherche/rechercheR_draft.html:35
+#: commonLocations/templates/commonLocations/recherche/rechercheResult.html:39
+#: commonLocations/templates/commonLocations/recherche/resultatRecherchePagination.html:33
+msgid "prix"
+msgstr "الثمن"
+
+#: commonLocations/templates/commonLocations/recherche/rechercheForm1.html:5
+msgid "Rechercher/locations"
+msgstr " بحث عن ايجار"
+
+#: commonLocations/templates/commonLocations/recherche/rechercheForm1.html:14
+msgid "  Formulaire de recherche/locations : "
+msgstr " استمارة البحث عن ايجار"
+
+#: commonLocations/templates/commonLocations/recherche/rechercheForm1.html:45
+msgid "  prix du loyer par mois en anncienne ougyuya "
+msgstr " الايجار الشهري بالاوقية القديمة"
+
+#: commonLocations/templates/commonLocations/recherche/rechercheForm1.html:59
+#: commonLocations/templates/commonLocations/recherche/rechercheForm2.html:5
+#: commonLocations/templates/commonLocations/recherche/rechercheForm2.html:78
+msgid "Rechercher"
+msgstr "بحث"
+
+#: commonLocations/templates/commonLocations/recherche/rechercheForm1.html:64
+msgid "recherche avance"
+msgstr "  بحث المتقدم"
+
+#: commonLocations/templates/commonLocations/recherche/rechercheForm2.html:14
+msgid "  Formulaire de recherche/location  avance: "
+msgstr "  استمارة البحث المتقدم عن ايجار"
+
+#: commonLocations/templates/commonLocations/recherche/rechercheForm2.html:44
+msgid "Region"
+msgstr "المكان"
+
+#: commonLocations/templates/commonLocations/recherche/rechercheForm2.html:65
+msgid " prix du loyer par mois en anncienne ougyuya"
+msgstr "الايجار الشهري بالاوقية القديمة"
+
+#: commonLocations/templates/commonLocations/recherche/rechercheR_draft.html:9
+#: commonLocations/templates/commonLocations/recherche/resultatRecherchePagination.html:9
+msgid "Resultats du recherche sur l'offre de vente "
+msgstr "نتائج البحث المتعلقة بعروض البيع"
+
+#: commonLocations/templates/commonLocations/recherche/rechercheResult.html:9
+msgid " desole, il y a pas de resultat correspondant a votre recherche "
+msgstr " لا توجد نتائج مطابقة لما تبحثون عنه حاليا"
+
+#: commonLocations/templates/commonLocations/recherche/rechercheResult.html:15
+msgid "Resultats du recherche sur l'offre de location "
+msgstr "نتائج البحث المتعلقة بعروض االايجار"
+
+#: commonLocations/templates/commonLocations/recherche/rechercheResult.html:73
+msgid " resultats proche de votre recherche"
+msgstr " نتائج قريية مما تبحثون عنه"
+
+#: commonLocations/templates/commonLocations/update.html:5
+msgid "modifier une annonce"
+msgstr "تغيير الاعلان"
+
+#: commonLocations/templates/commonLocations/update.html:35
+msgid "Lieux"
+msgstr "المكان"
+
+#: commonLocations/templates/commonLocations/update.html:57
+msgid " loyer mensuelle en ancien ouguiya"
+msgstr " الايجار الشهري بالاوقية القديمة"

@@ -1,0 +1,25 @@
+heroku run
+heroku run python manage.py migrate
+
+heroku run python manage.py makemigrations
+
+heroku run python manage.py migrate
+
+
+ heroku run python manage.py loaddata lieux CategorieVente CategorieLocation --ignorenonexistent
+
+
+heroku run python manage.py createsuperuser
+
+
+django admin add assist => me 
+             add site telephone
+             add kh
+             add kh to assist
+
+addon for media 
+
+
+python manage.py runserver 
+for test on local
+ok

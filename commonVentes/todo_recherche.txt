@@ -1,0 +1,6 @@
+- si le resultat  > 4 => pagination
+    
+
+
+
+- si le resultat < 4 => non pagination + resultat_inf et resultat_sup

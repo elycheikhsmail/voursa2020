@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+  <object model="baseApp.categorievente" pk="1">
+    <field name="date_add" type="DateTimeField">2019-09-02T16:17:16.193518+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-02T16:17:16.193600+00:00</field>
+    <field name="nom" type="CharField">Maison</field>
+    <field name="nom_ar" type="CharField">منازل</field>
+  </object>
+  <object model="baseApp.categorievente" pk="2">
+    <field name="date_add" type="DateTimeField">2019-09-02T16:19:32.033387+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-02T16:19:32.033432+00:00</field>
+    <field name="nom" type="CharField">Terrain</field>
+    <field name="nom_ar" type="CharField">قطعة ارضية</field>
+  </object>
+  <object model="baseApp.categorievente" pk="3">
+    <field name="date_add" type="DateTimeField">2019-09-02T16:20:12.768400+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-02T16:20:12.768472+00:00</field>
+    <field name="nom" type="CharField">Voiture</field>
+    <field name="nom_ar" type="CharField">سيارات</field>
+  </object>
+  <object model="baseApp.categorievente" pk="4">
+    <field name="date_add" type="DateTimeField">2019-09-02T16:20:38.892627+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-02T16:20:38.892673+00:00</field>
+    <field name="nom" type="CharField">Telephone</field>
+    <field name="nom_ar" type="CharField">هواتف</field>
+  </object>
+  <object model="baseApp.categorievente" pk="5">
+    <field name="date_add" type="DateTimeField">2019-09-02T16:21:07.854767+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-02T16:21:07.854846+00:00</field>
+    <field name="nom" type="CharField">Mode,Vetements</field>
+    <field name="nom_ar" type="CharField">ملابس</field>
+  </object>
+  <object model="baseApp.categorievente" pk="6">
+    <field name="date_add" type="DateTimeField">2019-09-02T16:21:51.806010+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-02T16:21:51.806060+00:00</field>
+    <field name="nom" type="CharField">Electro-menagers</field>
+    <field name="nom_ar" type="CharField">أدوات منزلية</field>
+  </object>
+  <object model="baseApp.categorievente" pk="7">
+    <field name="date_add" type="DateTimeField">2019-09-02T16:22:46.946574+00:00</field>
+    <field name="date_last_change" type="DateTimeField">2019-09-02T16:22:46.946620+00:00</field>
+    <field name="nom" type="CharField">autre categorie</field>
+    <field name="nom_ar" type="CharField">تصنيفات اخري</field>
+  </object>
+</django-objects>

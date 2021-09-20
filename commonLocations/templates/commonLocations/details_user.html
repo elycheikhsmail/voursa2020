@@ -1,0 +1,96 @@
+{% extends 'baseApp/base.htm' %}
+{% load static %}
+{% load i18n %}
+{% load humanize %}
+
+{% block content %}
+
+<h1>  {% blocktrans %}Editer/gerer{% endblocktrans %} </h1>
+
+ {% if vente.isPublier == False %}
+<div class="w3-row-padding w3-yellow"> 
+  {% blocktrans %}pas encore publier, en tente de l'accord de l'administration du site,en general ca prend 30 min au max ( aux horaire de la permence ){% endblocktrans %}
+   <hr>
+</div>
+{% endif  %}
+
+<div class="w3-row-padding">
+<br>
+		<div class="w3-col  w3-card-2 w3-container w3-white">
+			<div>
+			{% if lang == 'fr' %}
+						       {{vente.categorie.nom}} / {{vente.lieux.nom }}
+						   {% else %}
+						       {{vente.categorie.nom_ar}} / {{vente.lieux.nom_ar }}
+						   {% endif %}
+			</div>
+			<div style="text-align:center;">{{ vente.desc }}</div>
+
+			<div style="text-align:center;">
+				<div>
+					<sup>
+						{% trans "loyer mensuelle" %}
+					</sup>
+					<b style="font-size:30px;">
+						{{vente.prix|intcomma}}
+					</b>
+					<sub>
+						<small>
+							{% trans  "ancien ouguiya" %}
+						</small>
+					</sub>
+				</div>
+			</div>
+
+</div>
+<div class="w3-row-padding">
+
+			<div>
+			<br>
+				<a class="w3-btn w3-black" href="{% url  'commonLocations:update_vente' vente.id  lang  %}"> 
+					{%  trans "Editer"  %}
+					 <br>( {%  trans "text" %} ) </a>
+				{% if vente.images.count < 3 %}
+				<a class="w3-btn w3-black" href="{% url  'imagesLocationsApp:create_img'  vente.id  lang  %}">
+						{% trans "Ajouter" %} 
+						<br>
+							( {% trans  "image"  %} )
+						</a>
+				{% endif %}
+				<a class="w3-btn w3-black" 
+				href="{% url  'commonLocations:delete_vente' vente.id 1 lang %}"> 
+				         {% blocktrans %} retirer {% endblocktrans %}
+						 <br>
+						 {% blocktrans %}  l'annonce, j'ai vendue {% endblocktrans %}
+						
+						</a>
+				<a class="w3-btn w3-black" 
+				href="{% url  'commonLocations:delete_vente' vente.id 2 lang %}"> 
+				         {% blocktrans %} retirer {% endblocktrans %}
+						 <br>
+						 {% blocktrans %}  l'annonce, pour autre raison {% endblocktrans %}
+						
+						</a>
+				
+				
+
+			</div>
+</div>
+			<!-- start col img -->
+
+{% if vente.images.count > 0 %}
+{% for img in vente.images.all %}
+<div class="w3-row-padding"><br>
+	<div class="w3-white w3-center w3-col   w3-card-2 "  >
+		<img src="{{ img.img.url }}" alt="img" width="80%" /> <br>
+	</div>
+    <div>
+	  <a class="w3-btn w3-black"  href="{% url 'imagesLocationsApp:delete_img' img.id vente.id  lang %}"> 
+		{% trans "supprimer" %} <br> ( {% trans "img"  %})     
+	  </a>
+     </div>
+</div>
+{% endfor %}
+{% endif %}
+
+{% endblock %}

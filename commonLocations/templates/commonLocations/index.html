@@ -1,0 +1,97 @@
+{% extends 'baseApp/base.htm' %}
+{% load humanize %}
+{% load i18n %} 
+{% load static %}
+
+
+{% block content %}
+
+<div class="w3-row-padding" >
+
+  {%  if  auth %}
+   <h1> {% trans "mes annonces de location" %} </h1>
+  {% else %}
+	<h1> {% trans  "offres des locations" %} </h1>
+  {% endif  %}
+</div>
+
+{%  if  auth %} 
+{% include 'commonLocations/links/ajouter_une_annonce.html' %}
+{%  endif %} 
+
+{%  if n > 0  %} 
+
+   {% include 'commonLocations/pagination.html' %}
+	<div class="w3-row-padding" >
+		{% for vente in ventes %}
+
+			<div class="w3-col " >
+                       
+			        	<div class="w3-container w3-white">
+			        		{% if lang == 'fr' %}
+						       {{vente.categorie.nom}} / {{vente.lieux.nom }}
+						   {% else %}
+						       {{vente.categorie.nom_ar}} / {{vente.lieux.nom_ar }}
+						   {% endif %}
+
+						<br>
+						<div style="text-align:center;">
+							{{ vente.desc}}
+						</div>
+
+						<div style="text-align:center;">
+							<div>
+								<sup> {% trans "loyer mensuelle" %}  </sup>
+								<b style="font-size:30px;">
+									{{vente.prix|intcomma}}
+								</b>
+								<sub>
+									<small> {% trans  "ancien ouguiya" %} </small>
+								</sub>
+							</div>
+						</div>
+
+							<small> 
+							{% blocktrans %} publier le : {% endblocktrans %} 
+							{{ vente.date_add}}</small>
+						</div>
+				<!-- start col img -->
+				
+			{% if vente.images.count > 0 %} {% include 'commonLocations/img/download.html' %}
+			
+			{% else %}{% include 'commonLocations/img/pas_img.html' %}
+			{% endif %}
+			
+				<!-- end col im -->
+				<br>
+				{%  if  auth %} 
+				   {% include 'commonLocations/links/editer_gerer.html' %}   
+				   {% if vente.isPublier == True %}
+				   <br>
+				   <span> l'annonce est publier </span>
+				   {% else %}
+				   <br>
+				   <span>  pas encore publier </span>
+				   {% endif  %}
+				{% else %}
+				{% include 'commonLocations/links/details.html' %}
+				{% endif  %}
+
+				</div>
+				<br>
+			</div>
+			<!--  end col img -->
+
+		{% endfor %}
+	
+	     {% include 'commonLocations/pagination.html' %}
+		
+	</div>
+
+{%else%}
+<di>
+{% blocktrans %} il n'y a pas d'annonce de location {% endblocktrans %}
+</div>
+{% endif%}
+
+{% endblock %}

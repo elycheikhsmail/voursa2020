@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-08 04:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: usersApp/templates/registration/login.html:6
+#: usersApp/templates/usersApp/login.html:6
+msgid " Formulaire de connexion  "
+msgstr "استمارة الدخول"
+
+#: usersApp/templates/registration/login.html:12
+#: usersApp/templates/usersApp/login.html:12
+msgid "tel"
+msgstr "هاتف"
+
+#: usersApp/templates/registration/login.html:17
+#: usersApp/templates/usersApp/login.html:17
+#: usersApp/templates/usersApp/register.html:38
+msgid "  mot de pass: "
+msgstr "كلمة السر"
+
+#: usersApp/templates/registration/login.html:21
+#: usersApp/templates/usersApp/login.html:21
+msgid " Connexion "
+msgstr "دخول"
+
+#: usersApp/templates/usersApp/register.html:6
+msgid "formulaire d'inscription"
+msgstr "استمارة التسجيل"
+
+#: usersApp/templates/usersApp/register.html:10
+msgid "     vous voulez vous inscrire avec le numero de tel :   "
+msgstr " تريدون التسجيل بالرقم :"
+
+#: usersApp/templates/usersApp/register.html:15
+msgid ""
+"  \n"
+"                pour continue reseigner les informations suivantes\n"
+"                "
+msgstr " للمواصلة ادخل المعلومات التالية"
+
+#: usersApp/templates/usersApp/register.html:24
+msgid "  code : "
+msgstr " الكود"
+
+#: usersApp/templates/usersApp/register.html:27
+#: usersApp/templates/usersApp/register.html:32
+msgid " telephonner au numero "
+msgstr "اتصلو علي الهاتف"
+
+#: usersApp/templates/usersApp/register.html:27
+#: usersApp/templates/usersApp/register.html:33
+msgid " avoir votre code  "
+msgstr " للحصول علي الكود الخاص بكم"
+
+#: usersApp/templates/usersApp/register.html:42
+msgid " s'inscrire puis publier une annonce "
+msgstr "سجل ثم انشر اعلانا"
+
+#: usersApp/templates/usersApp/tel.html:5
+msgid "  registre form "
+msgstr "استمارة التسجيل"
+
+#: usersApp/templates/usersApp/tel.html:12
+msgid "tel "
+msgstr "هاتف"
+
+#: usersApp/templates/usersApp/tel.html:19
+msgid "   ajouter mon numero de  tel  "
+msgstr "اضف رقم الهاتف"
+
+#~ msgid "  login form  "
+#~ msgstr "استمارة التسجيل"
+
+#~ msgid "  que vous devez recevoir  un sms "
+#~ msgstr " الذي يجب ان يصلكم من خلالsms"

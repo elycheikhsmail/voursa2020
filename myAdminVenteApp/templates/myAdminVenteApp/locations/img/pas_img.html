@@ -1,0 +1,14 @@
+{% load i18n %} 
+{% load static %}
+
+
+<div class="w3-border">
+  
+      <a href="{% url  'myAdminVenteApp:details_users_vente2' vente.id   lang %}">
+  
+    <img src="{% static 'baseApp/img/pas_img.png' %}" 
+                    alt="img" width="80%" height="180px"/>
+                </a>
+
+</div>
+<span class="w3-text-center"> 0   {%  trans 'images' %}  </span>

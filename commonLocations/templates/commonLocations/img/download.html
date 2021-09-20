@@ -1,0 +1,15 @@
+{% load i18n %} 
+{% load static %}
+
+
+<div  class="w3-border" >
+     {%  if  auth %} 
+      <a href="{% url  'commonLocations:details_users_vente' vente.id  lang %}">
+     {% else %}
+        <a href= "{% url 'commonLocations:details_vente' vente.id   lang %}">
+    {% endif %}
+         <img src="{{   vente.images.first.img.url }}" alt="img" width="80%" 
+          />
+    </a>
+</div>
+<span class="w3-text-center"> {{vente.images.count }} {%  trans 'images' %}  </span>

@@ -1,0 +1,52 @@
+
+{% load i18n %} 
+
+
+{% block content %}
+<h1> {% blocktrans %} Formulaire de connexion  {% endblocktrans %} </h1>
+
+
+<form method="post"  role="form" >
+{% csrf_token %}
+<p>
+<label for="id_usename">  {% blocktrans %}tel{% endblocktrans %} :</label> 
+<input class="w3-select w3-border w3-light-grey"
+type="text" name="username" placeholder="tel"> 
+</p>
+<p>
+<label for="id_password">  {% blocktrans %}  mot de pass: {% endblocktrans %} </label> 
+<input class="w3-select w3-border w3-light-grey"
+type="password" name="password" placeholder="Mot de passe">
+<input type="submit" class="w3-btn w3-black"
+value="{% blocktrans %} Connexion {% endblocktrans %}" />
+</p>
+</form>
+<p>
+    
+
+    <div class="w3-dropdown-hover"> j'ai oublie mon mot de pass ?
+        <div class="w3-dropdown-content w3-card-4"  >
+          <div class="w3-container">
+            <p> 
+                vous pouvez reinstialiser votre mot de pass,
+                en suivant les memes etapes que vous avez fait pour vous inscrire,
+                donc 
+                <a href= "{% url 'usersApp:preRegister' 'fr' %}"
+                class="w3-bar-item  w3-brown  w3-border w3-margin" 
+                {% include 'baseApp/dir_text.html'%}>
+                cliquer ici 
+                </a>
+
+            </p>
+             
+          </div>
+        </div>
+      </div>
+
+
+
+</p>
+
+
+
+{% endblock %}

@@ -1,0 +1,5 @@
+{%  if  auth %} 
+<a href="{% url  'commonVentes:details_users_vente' vente.id  lang %}">
+{% else %}
+  <a href= "{% url 'commonVentes:details_vente' vente.id   lang %}">
+{% endif %}

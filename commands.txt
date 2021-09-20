@@ -1,0 +1,32 @@
+
+pip install -r  requirements.txt
+
+
+
+######################################################
+# extraire et serialiser les donner depuis la base de donnees
+python manage.py dumpdata baseApp.Lieux --format=xml --indent=2 
+-o=./baseApp/fixtures/Lieux.xml
+
+python manage.py dumpdata baseApp.CategorieVente --format=xml --indent=2 -o=./baseApp/fixtures/CategorieVente.xml
+
+python manage.py dumpdata baseApp.CategorieLocation --format=xml --indent=2 -o=./baseApp/fixtures/CategorieLocation.xml
+
+#################################################
+# injecter les donner serialiser  dans la base de donnees
+
+python manage.py loaddata lieux
+
+python manage.py loaddata CategorieVente --ignorenonexistent
+
+python manage.py loaddata CategorieLocation --ignorenonexistent
+
+in one commande
+
+python manage.py loaddata lieux CategorieVente CategorieLocation --ignorenonexistent
+
+
+
+###################################
+#python manage.py dumpdata baseApp.Lieux --format=yaml --indent=2 -o=./baseApp/fixtures/Lieux.yaml
+# si PyYAML es installe

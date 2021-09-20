@@ -1,0 +1,29 @@
+
+ CREATE DATABASE projet;
+
+
+CREATE USER sidi WITH PASSWORD 'sidi';
+
+ALTER ROLE sidi SET client_encoding To 'utf8';
+
+ ALTER ROLE sidi SET default_transaction_isolation TO 'read committed';
+ ALTER ROLE  sidi SET timezone TO 'UTC';
+
+
+  GRANT ALL PRIVILEGES ON DATABASE projet  TO sidi;
+
+
+  [...]
+
+DATABASES = {
+'default': {
+'ENGINE': 'django.db.backends.postgresql_psycopg2',
+'NAME': 'projet',
+'USER': 'sidi',
+'PASSWORD': 'sidi',
+'HOST': 'localhost',
+'PORT': '',
+}
+}
+
+sudo apt-get install  python3.7-dev 

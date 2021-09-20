@@ -1,0 +1,23 @@
+{% extends 'myAdminVenteApp/base.htm' %}
+{% load humanize %}
+{% load i18n %} 
+{% load static %}
+
+{% block content %}
+<h1> {{ status}} </h1>
+<table class="w3-table w3-striped">
+<tr>
+  <th> Date </th>
+  <th> tel </th>
+  <th> code </th>
+</tr>
+{% for telcode in telscodes %}
+<tr>
+  <td>  {{ telcode.history.first.date_add }}</td>
+  <td> {{telcode.tel }}</td>
+  <td> {{telcode.code }} </td>
+</tr>
+{% endfor %}
+</table>
+
+{% endblock content %}

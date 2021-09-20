@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html   {% include 'baseApp/dir_html.html'%}>
+    <head>
+        <meta charset="utf-8">
+        <title> RIMO site d'annoces gratuits </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet"
+     href= "{% static 'baseApp/css/s.css' %}">
+     
+    </head>
+    <body>
+        <div class="w3-container">
+
+            <style scoped id="style"></style>
+            <script src="{% static 'baseApp/js/myjs.js' %}"></script>
+
+            <div>
+                <h1>  la direction du site </h1>
+            </div>
+
+            <!-- Sidebar -->
+            {% include 'myAdminVenteApp/nav.html' %}
+            <!-- Page Content -->
+         
+            <div class="w3-container w3-gray" id="app">
+                {% block content %}{% endblock content %}
+            </div>
+
+            <div>
+                <h1> Footer </h1>
+            </div>
+
+
+
+        </body>
+</html>

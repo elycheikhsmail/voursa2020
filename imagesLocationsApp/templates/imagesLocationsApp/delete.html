@@ -1,0 +1,11 @@
+{% extends 'baseApp/base.htm' %}
+{% load i18n %} 
+
+{% block content%}
+     <!-- show img here -->
+    <form method = "post"> 
+        {% csrf_token %} 
+        <button type="submit"> {% blocktrans %} supprimer l'image {% endblocktrans %}</button> <br>
+         <button type="submit"> {% blocktrans %}annuler {% endblocktrans %} </button> 
+    </form> 
+{% endblock content%}

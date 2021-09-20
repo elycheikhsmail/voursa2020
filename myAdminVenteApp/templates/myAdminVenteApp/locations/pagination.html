@@ -1,0 +1,50 @@
+  {% load i18n %} 
+  <hr>
+
+  <div class="w3-row-padding w3-card-2"  
+  {% if lang ==  'ar' %}
+   dir= "rtl"
+   {% else %}
+   dir= "ltr"
+   {% endif %}
+   >
+		
+            {% load i18n %} 
+            {% load static %}
+                        
+        <div>
+        <br>
+        <span class="step-links">
+        {% if ventes.has_previous %}
+            <a href="?page=1" class="w3-btn w3-black">&laquo; 
+                {% trans 'le premier'  %}
+                 
+                </a>
+            <a href="?page={{ ventes.previous_page_number }}" class="w3-btn w3-black"> 
+                    {% trans 'precedant'  %}
+			 
+			</a>
+			
+        {% endif %}
+
+        <span class="current">
+            {%   trans  'Page '  %}
+             <b>{{ ventes.number }} </b> 
+            {%   trans  'sur'  %}
+              <b>{{ ventes.paginator.num_pages }} </b>.
+        </span>
+
+        {% if ventes.has_next %}
+		 
+            <a href="?page={{ ventes.next_page_number }}" class="w3-btn w3-black" > 
+                    {%  trans 'suivant'  %}
+                  </a>
+            <a href="?page={{ ventes.paginator.num_pages }}" class="w3-btn w3-black" >
+               
+                    {%  trans  'le dernier'  %}
+                 &raquo;</a>
+        {% endif %}
+    </span>
+</div>
+<br>
+	<br>

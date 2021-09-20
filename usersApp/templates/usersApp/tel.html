@@ -1,0 +1,26 @@
+{% extends 'baseApp/base.htm' %}
+{% load i18n %} 
+
+{% block content %}
+<h1>  {% blocktrans %}  registre form {% endblocktrans %}  </h1>
+
+{{ error }}
+
+<form method="post"  role="form" >
+{% csrf_token %}
+<p>
+<label for="id_tel">  {% blocktrans %}tel {% endblocktrans %} </label> 
+<input class="w3-select w3-border w3-light-grey"
+type="number"
+ name="tel" min="20000000" max="49999999">
+</p>
+<p>
+<input type="submit" class="w3-btn w3-black"
+value="{% blocktrans %}   ajouter mon numero de  tel  {% endblocktrans %}  " />
+
+</p>
+</form>
+
+
+
+{% endblock %}

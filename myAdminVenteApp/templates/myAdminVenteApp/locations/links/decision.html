@@ -1,0 +1,19 @@
+{% load humanize %}
+{% load i18n %} 
+{% load static %}
+<div class="w3-row-padding">
+    <h1> decision </h1>
+    <div>
+        <a class="w3-btn w3-black" 
+				href="{% url 'myAdminVenteApp:publier2' vente.id lang %}"
+                >
+            {% blocktrans %}  publier {% endblocktrans %}
+        </a>
+        <a class="w3-btn w3-black" 
+			 href="{% url 'myAdminVenteApp:rejeter2' vente.id lang %}">
+            {% blocktrans %} rejeter {% endblocktrans %}
+          
+        </a>
+
+    </div>
+</div>

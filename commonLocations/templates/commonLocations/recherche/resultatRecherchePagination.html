@@ -1,0 +1,68 @@
+{% extends 'baseApp/base.htm' %}
+{% load humanize %}
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+    <div class="w3-row-padding" >
+        <h1>
+            {% trans "Resultats du recherche sur l'offre de vente " %}
+        </h1>
+    </div>
+        {% include 'commonVentes/pagination.html' %}
+       
+        <div class="w3-row-padding" >
+            {% for vente in ventes %}
+                <div class="w3-col m6 l4  " >
+
+                    <div class="w3-container w3-white">
+                        {% if lang == 'fr' %}
+                            {{vente.categorie.nom}} / {{vente.lieux.nom }}
+                        {% else %}
+                            {{vente.categorie.nom_ar}} / {{vente.lieux.nom_ar }}
+                        {% endif %}
+
+                        <br>
+                        <div style="text-align:center;">
+                            {{ vente.desc|truncatechars_html:35 }}
+                        </div>
+
+                        <div style="text-align:center;">
+                            <div>
+                                <sup>
+                                    {% trans "prix" %}
+                                </sup>
+                                <b style="font-size:30px;">
+                                    {{vente.prix|intcomma}}
+                                </b>
+                                <sub>
+                                    <small>
+                                        {% trans  "A-UM" %}
+                                    </small>
+                                </sub>
+                            </div>
+                        </div>
+                        <!-- start col img -->
+
+                        {% if vente.images.count > 0 %}
+                            {% include 'commonVentes/img/download.html' %}
+                        {% else %}
+                            {% include 'commonVentes/img/pas_img.html' %}
+                        {% endif %}
+
+                        <!-- end col im -->
+                        <br>
+
+                    </div>
+                    <br>
+                </div>
+                <!--  end col img -->
+
+            {% endfor %}
+            
+            {% include 'commonVentes/pagination.html' %}
+        
+        </div>
+      
+
+        {% endblock %}
